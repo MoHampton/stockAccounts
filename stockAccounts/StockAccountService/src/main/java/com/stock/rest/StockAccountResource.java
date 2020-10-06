@@ -28,13 +28,13 @@ public class StockAccountResource {
 	}
 
 	// TODO Create a method to retrieve a stock account by id
-	@RequestMapping("/{id}")
+	@RequestMapping("id/{id}")
 	public StockAccount findItem(@PathVariable("id") Long id) {
 		return stk.findById(id);
 	}
 
 	// TODO Create a method to retrieve a stock account by name
-	@RequestMapping("/{name}")
+	@RequestMapping("name/{name}")
 	public Collection<StockAccount> findByName(@PathVariable("name") String name) {
 		return stk.findByName(name);
 	}
